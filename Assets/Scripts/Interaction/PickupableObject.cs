@@ -26,7 +26,7 @@ public class PickupableObject : MonoBehaviour, IPickupable
     public PickupableObject Throw(Vector3 v)
     {
         rb.useGravity = true;
-        rb.AddExplosionForce(300, v, 30);
+        rb.AddForce(v, ForceMode.Impulse);
         return this;
     }
 }

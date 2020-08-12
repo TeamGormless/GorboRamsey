@@ -7,10 +7,12 @@ using TMPro;
 
 public class CharacterPickupController : MonoBehaviour
 {
+    private const float VERTICAL_THROW_POWER = 0.10f;
+
     public PickupableObject PickedUpObject { get; private set; }
 
     public KeyCode PickUpKey;
-    public float PickUpDistance;
+    public float ThrowForce;
 
     private Vector3 holdObjectOffset;
     private CharacterPickupTrigger characterPickupTrigger;
@@ -66,7 +68,13 @@ public class CharacterPickupController : MonoBehaviour
     private void PutDownObject(PickupableObject p)
     {
         p.Putdown();
-        p.Throw(transform.localPosition.normalized);
+
+        Vector3 throwVector = new Vector3(
+            transform.forward.x, 
+            transform.forward.y + VERTICAL_THROW_POWER, 
+            transform.forward.z);
+
+        p.Throw(throwVector * ThrowForce);
         PickedUpObject = null;
     }
 
