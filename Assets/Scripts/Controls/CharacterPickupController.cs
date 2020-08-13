@@ -67,6 +67,8 @@ public class CharacterPickupController : MonoBehaviour
 
     private void PutDownObject(PickupableObject p)
     {
+        PickedUpObject = null;
+        
         p.Putdown();
 
         Vector3 throwVector = new Vector3(
@@ -75,7 +77,6 @@ public class CharacterPickupController : MonoBehaviour
             transform.forward.z);
 
         p.Throw(throwVector * ThrowForce);
-        PickedUpObject = null;
     }
 
 

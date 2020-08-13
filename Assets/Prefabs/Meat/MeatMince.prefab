@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2649702044064319066}
   - component: {fileID: 2649702044064319067}
   - component: {fileID: 2649702044064319068}
-  - component: {fileID: 2649702044064319015}
+  - component: {fileID: 4693159471346451618}
   m_Layer: 0
   m_Name: MeatMince
   m_TagString: Untagged
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &2649702044064319015
+--- !u!114 &4693159471346451618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,6 +122,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2649702044064319069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2617a2535880c3046a691f3be0ffdd12, type: 3}
+  m_Script: {fileID: 11500000, guid: e3c18e83f8e467448bfa71a93feff3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

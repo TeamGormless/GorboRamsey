@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mincer : Machine
+public class MeatObject : PickupableObject
 {
+    
 }
